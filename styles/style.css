@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +8,11 @@
 body {
   background-color: #fff;
   color: #000;
+  display: flex;
+  flex-direction: column;
+
 }
 
-/* Top bar with logo and title */
 .top {
   display: flex;
   align-items: center;
@@ -29,7 +30,6 @@ body {
   font-weight: bold;
 }
 
-/* Navigation bar */
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -52,7 +52,6 @@ body {
   color: #555;
 }
 
-/* === HOMEPAGE HERO SECTION === */
 .home-hero {
   background-image: url('/images/bolt-bg.png');
   background-size: cover;
@@ -85,12 +84,11 @@ body {
   font-size: 1rem;
 }
 
-/* Services box */
 .services-box {
   background-color: white;
   color: black;
   padding: 1rem;
-  width: 300px;
+  width: 40%;
   font-style: italic;
   border-radius: 10px;
   margin-right: 2rem;
@@ -113,7 +111,6 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Brand logos */
 .brand-logos {
   margin-top: 1rem;
   display: flex;
@@ -127,9 +124,9 @@ body {
   margin: 0.3rem;
 }
 
-/* Right box */
 .right-box {
   flex: 1;
+  width: 50%;
 }
 
 .why-choose-box {
@@ -152,8 +149,11 @@ body {
   line-height: 1.4;
 }
 
-/* Contact Info */
 .contact-info {
+    background-color: white;
+  padding: 1rem;
+  border-radius: 2em;
+  width: 50%;
   margin-top: 2rem;
   font-size: 0.9rem;
   color: black;
@@ -169,8 +169,8 @@ body {
   margin: 0.3rem 0;
 }
 
-/* Footer */
 footer {
+    width: 100%;
   padding: 1rem;
   text-align: center;
   background-color: #000;
@@ -178,9 +178,8 @@ footer {
   font-size: 0.9rem;
 }
 
-/* === SERVICES PAGE STYLES === */
+/* SERVICES PAGE STYLES  */
 
-/* Hero Section */
 .services-hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -197,7 +196,6 @@ footer {
   font-size: 1.1rem;
 }
 
-/* Services Grid */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -227,7 +225,6 @@ footer {
   color: #444;
 }
 
-/* Call to Action Section */
 .cta {
   text-align: center;
   padding: 2rem;
@@ -246,7 +243,8 @@ footer {
 .btn:hover {
   background: #333;
 }
-/* === ABOUT US PAGE STYLES === */
+
+/* ABOUT US PAGE STYLES */
 .about-hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -307,7 +305,8 @@ footer {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
-/* === CONTACT PAGE STYLES === */
+
+/* CONTACT PAGE STYLES */
 .contact-hero {
   background-color: #111;
   color: white;
@@ -384,7 +383,21 @@ footer {
 .contact-form .btn:hover {
   background-color: #333;
 }
-/* === BOOKING PAGE STYLES === */
+.map-section{
+    padding: 2rem;
+    text-align: center;
+}
+.map-section h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.map-container{
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* BOOKING PAGE STYLES */
 .booking-hero {
   background-color: #111;
   color: white;
