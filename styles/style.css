@@ -53,7 +53,7 @@ body {
 }
 
 .home-hero {
-  background-image: url('/images/bolt-bg.png');
+  background-image: url('../images/bolt-bg.png');
   background-size: cover;
   background-position: center;
   color: white;
