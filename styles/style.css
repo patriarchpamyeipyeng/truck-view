@@ -1,0 +1,248 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier Prime', monospace;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Top bar with logo and title */
+.top {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.top h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Navigation bar */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 1rem;
+}
+
+.nav-bar nav a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 1.5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.nav-bar nav a:hover {
+  font-weight: bold;
+  color: #555;
+}
+
+/* === HOMEPAGE HERO SECTION === */
+.home-hero {
+  background-image: url('/images/bolt-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.home-hero h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.home-hero h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.book {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Services box */
+.services-box {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  width: 300px;
+  font-style: italic;
+  border-radius: 10px;
+  margin-right: 2rem;
+}
+
+.services-box h4 {
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.service-item img {
+  width: 28px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+/* Brand logos */
+.brand-logos {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand-logos img {
+  width: 40px;
+  height: auto;
+  margin: 0.3rem;
+}
+
+/* Right box */
+.right-box {
+  flex: 1;
+}
+
+.why-choose-box {
+  background-color: #111;
+  padding: 1rem;
+  color: white;
+  max-width: 400px;
+  margin-top: 2rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.why-choose-box h4 {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.why-choose-box p {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.contact-info img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+}
+
+.contact-info p {
+  margin: 0.3rem 0;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #000;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* === SERVICES PAGE STYLES === */
+
+/* Hero Section */
+.services-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #222;
+  color: #fff;
+}
+
+.services-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-hero p {
+  font-size: 1.1rem;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.service-card p {
+  color: #444;
+}
+
+/* Call to Action Section */
+.cta {
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn {
+  background: #111;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #333;
+}
